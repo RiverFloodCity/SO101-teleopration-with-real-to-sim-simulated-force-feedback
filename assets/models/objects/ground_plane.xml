@@ -1,0 +1,36 @@
+<mujocoinclude>
+  <asset>
+    <!-- 蓝色棋盘格（内置生成，不需要下载图片） -->
+    <texture
+      name="tex_blue_grid"
+      type="2d"
+      builtin="checker"
+      width="512"
+      height="512"
+      rgb1="0.1 0.2 0.3"
+      rgb2="0.2 0.3 0.4"
+    />
+    <!-- texrepeat 控制格子密度；数值越大格子越密 -->
+    <material
+      name="mat_blue_grid"
+      texture="tex_blue_grid"
+      texrepeat="10 10"
+      texuniform="true"
+      reflectance="0.2"
+    />
+  </asset>
+
+  <!-- Ground plane for optional extras -->
+  <body name="ground" pos="0 0 0">
+    <!-- size="0 0 ..." -> 无限地面 -->
+    <geom
+      name="ground_plane"
+      type="plane"
+      size="0 0 0.1"
+      material="mat_blue_grid"
+      friction="0.8 0.1 0.01"
+      contype="1"
+      conaffinity="1"
+    />
+  </body>
+</mujocoinclude>

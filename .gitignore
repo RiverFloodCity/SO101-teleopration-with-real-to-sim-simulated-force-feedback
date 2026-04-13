@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.so
+
+.venv/
+venv/
+.env
+
+# Local calibration cache
+hardware/leader/.cache/
+
+# Mujoco combined XML generated at runtime (should not be committed)
+assets/models/combined_*.xml
+assets/models/tmp*.xml

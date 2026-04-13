@@ -1,0 +1,11 @@
+# Core
+mujoco>=3.1.0
+numpy>=1.24
+
+# Hardware bus utils
+pyserial>=3.5
+tqdm>=4.66
+deepdiff>=6.0
+
+# Feetech STS/SMS/SC 系列 SDK（提供 scservo_sdk）
+feetech-servo-sdk

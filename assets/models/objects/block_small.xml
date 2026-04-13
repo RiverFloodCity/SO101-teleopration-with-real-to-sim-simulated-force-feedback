@@ -1,0 +1,8 @@
+<!-- Small cube for grasp/contact tests -->
+<body name="block_small" pos="0.35 0 0.03">
+  <!-- 没有 joint 的 body 会被“焊死”在世界上；freejoint 让它成为可运动刚体 -->
+  <freejoint/>
+  <geom type="box" size="0.02 0.02 0.02" mass="0.02" rgba="0.8 0.4 0.4 1"
+        friction="0.9 0.1 0.01" solref="0.002 1" solimp="0.9 0.9 0.01"
+        contype="1" conaffinity="1"/>
+</body>

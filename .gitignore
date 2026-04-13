@@ -5,6 +5,7 @@ __pycache__/
 .venv/
 venv/
 .env
+.codex
 
 # Local calibration cache
 hardware/leader/.cache/
